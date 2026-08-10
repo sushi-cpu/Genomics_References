@@ -1,6 +1,14 @@
 # GATk.GRCh38 used by nfcore sarek
 ## First download the awscli
 ```bash
+# for mac
+brew install awscli 
+# for linux
+sudo apt update && sudo apt install awscli -y 
+
+```
+
+```bash
 aws s3 --no-sign-request --region eu-west-1 sync s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/ ./GATK_GRCh38/
 ```
 What is included in this download?The command pulls down approximately 50 GB to 100 GB of data, spanning three major components:
